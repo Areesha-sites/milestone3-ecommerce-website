@@ -16,7 +16,7 @@ const Banner = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 150000000,
+            delay: 1500000000,
             disableOnInteraction: false,
           }}
           navigation={true}
@@ -36,21 +36,21 @@ const Banner = () => {
                       Brew Your Perfect Cup ☕
                     </p>
                   </div>
-                  <h1 className="md:text-[65px] xs:text-[13vw] xs:w-[100%] xs:leading-[50px] font-bold py-4 lg:pl-[2rem] text-[#5a3e2b] mt-[20px] md:mt-0 text-center sm:leading-[86px] 2xl:text-[7vw] 2xl:mt-[1rem] xl:text-[6vw] xl:ml-[-5rem] xl:mt-3 lg:text-[6vw] lg:mt-[1rem] xxs:text-[14vw] xxs:leading-[46px] xs-sm:leading-[50px] xs-md:text-[15vw] xs-md:leading-[68px]">
+                  <h1 className="md:text-[65px] xs:text-[13vw] xs:w-[100%] xs:leading-[50px] py-4 lg:pl-[2rem] text-[#5a3e2b] mt-[20px] md:mt-0 text-center sm:leading-[86px] 2xl:text-[7vw] 2xl:mt-[1rem] xl:text-[6vw] xl:ml-[-5rem] xl:mt-3 lg:text-[6vw] lg:mt-[1rem] xxs:text-[14vw] xxs:leading-[46px] xs-sm:leading-[50px] xs-md:text-[15vw] xs-md:leading-[68px] font-playfair font-extrabold xl:leading-[76px]">
                     Brew Berry Coffee
                   </h1>
 
-                  <div className="xs:absolute xs:top-[4.7rem] xs:right-[4rem] xs:mt-5 sm:absolute sm:top-[9rem] sm:right-[1rem] sm:h-[10rem] sm:w-[10rem] md:absolute md:top-[0.5rem] md:right-[-3.5rem] md:mt-5 2xl:absolute 2xl:top-[11rem] 2xl:right-[3rem] 2xl:mt-5 xl:absolute xl:top-[7.8rem] xl:right-[6rem] xxl:absolute xxl:top-[17rem] xxl:right-[17rem] custom-xl:absolute custom-xl:top-[7.5rem] custom-xl:right-[8rem] lg:absolute lg:top-[5.5rem] lg:right-[-1rem] xxs:absolute xxs:top-[5.3rem] xxs:right-[1.6rem] xs-sm:absolute xs-sm:top-[5.8rem] xs-sm:right-[2.7rem] xs-md:absolute xs-md:top-[6.8rem] xs-md:rigt-[2.5rem]">
+                  <div className="xs:absolute xs:top-[4.7rem] xs:right-[4rem] xs:mt-5 sm:absolute sm:top-[9rem] sm:right-[1rem] sm:h-[10rem] sm:w-[10rem] md:absolute md:top-[0.5rem] md:right-[-3.5rem] md:mt-5 2xl:absolute 2xl:top-[11rem] 2xl:right-[3rem] 2xl:mt-5 xl:absolute xl:top-[6rem] xl:right-[7rem] xxl:absolute xxl:top-[17rem] xxl:right-[17rem] custom-xl:absolute custom-xl:top-[7.5rem] custom-xl:right-[8rem] lg:absolute lg:top-[5.5rem] lg:right-[-1rem] xxs:absolute xxs:top-[5.3rem] xxs:right-[1.6rem] xs-sm:absolute xs-sm:top-[5.8rem] xs-sm:right-[2.7rem] xs-md:absolute xs-md:top-[6.8rem] xs-md:rigt-[2.5rem]">
                     <Image
                       src="/vector.png"
                       alt="Coffee-Tag"
                       title="Coffee-vector"
                       width={60}
                       height={60}
-                      className="md:h-[5rem] md:w-[5rem] 2xl:h-[8rem] 2xl:w-[8rem] xl:w-[5rem] xl:h-[5rem] xxl:h-[10rem] xxl:w-[10rem] lg:h-[5rem] lg:w-[5rem] custom-xl:h-[6rem] custom-xl:w-[6rem] xxs:h-[3.5rem] xxs:w-[3.5rem] xs-md:h-[4.3rem] xs-md:w-[4.3rem]"
+                      className="md:h-[5rem] md:w-[5rem] 2xl:h-[8rem] 2xl:w-[8rem] xl:w-[6rem] xl:h-[6rem] xxl:h-[10rem] xxl:w-[10rem] lg:h-[5rem] lg:w-[5rem] custom-xl:h-[6rem] custom-xl:w-[6rem] xxs:h-[3.5rem] xxs:w-[3.5rem] xs-md:h-[4.3rem] xs-md:w-[4.3rem]"
                     />
                   </div>
-                  <p className="py-4 text-[#452b1a] lg:pl-[2rem] ml-[20px] xs:ml-[2.5rem] xs:mr-[2.5rem] md:text-[0.9rem] 2xl:text-[1.5rem] xl:text-[1rem] xl:ml-[1rem] xxl:text-[1.6rem] xxl:ml-[5rem] xxs:text-[12px] xxs:mx-[1rem] xxs:mt-[-10px] xs-md:text-[14px]">
+                  <p className="py-4 text-[#452b1a] lg:pl-[2rem] ml-[20px] xs:ml-[2.5rem] xs:mr-[2.5rem] md:text-[0.9rem] 2xl:text-[1.5rem] xl:text-[1rem] xl:ml-[1rem] xxl:text-[1.6rem] xxl:ml-[5rem] xxs:text-[12px] xxs:mx-[1rem] xxs:mt-[-10px] xs-md:text-[14px] ">
                     <b>
                       <i className="text-[#5a3e2b] ">
                         "Where every Sip Tells a Story"
@@ -69,25 +69,28 @@ const Banner = () => {
                     <i className="text-[#5a3e2b] font-bold"> BrewBerry!</i> ♡
                   </p>
                   {/* ================================= */}
-                  <div className="xs:flex xs:flex-col xs:gap-4 xs:py-1 px-[4rem] xs:px-[6.5rem] sm:flex sm:flex-col sm:gap-4 sm:py-1 sm:px-[11rem] md:flex md:flex-row md:gap-4 md:px-[11rem]  md:ml-[2rem] 2xl:flex 2xl:flex-row 2xl:gap-4 2xl:py-1 2xl:px-[6rem] xl:flex xl:flex-row xl:gap-4 xl:py-1 xl:px-[3rem] xxl:flex xxl:flex-row xxl:gap-4 xxl:py-1 xxl:px-[7rem] lg:flex lg:flex-row lg:gap-4 lg:py-1 lg:px-[4rem] xxs:flex xxs:flex-col xxs:gap-3 xxs:px-[-1rem] xs-sm:flex xs-sm:flex-row ">
+                  <div className="xs:flex xs:flex-col xs:gap-4 xs:py-1 px-[4rem] xs:px-[6.5rem] sm:flex sm:flex-col sm:gap-4 sm:py-1 sm:px-[11rem] md:flex md:flex-row md:gap-4 md:px-[11rem] md:ml-[2rem] 2xl:flex 2xl:flex-row 2xl:gap-4 2xl:py-1 2xl:px-[6rem] xl:flex xl:flex-row xl:gap-4 xl:py-1 xl:px-[3rem] xxl:flex xxl:flex-row xxl:gap-4 xxl:py-1 xxl:px-[7rem] lg:flex lg:flex-row lg:gap-4 lg:py-1 lg:px-[4rem] xxs:flex xxs:flex-col xxs:gap-3 xxs:px-[-1rem] xs-sm:flex xs-sm:flex-row">
                     <Button
                       title="Menu-Button"
-                      className="bg-[#2e1609] text-[#f5e0c3] p-5 rounded-xl shadow-md shadow-[#7f593e] font-bold hover:scale-105 transition-all hover:font-bold hover:bg-[#5a3e2b] hover:text-[#eddfcb] md:text-[0.9rem] md:p-4 xl:py-[-7px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] xs-sm:ml-[-2rem] xs-md:ml-[-1rem] xl:px-[40px] xl:p-[2px] "
+                      className="flex items-center bg-[#2e1609] text-[#f5e0c3] p-3 px-5 rounded-xl shadow-md shadow-[#7f593e] font-bold hover:scale-105 transition-all hover:font-bold md:text-[0.9rem] md:px-4 xl:py-[8px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] xs-sm:ml-[-2rem] xs-md:ml-[-1rem] xl:px-[40px]"
                     >
-                     <span> Order Now <ArrowRightIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" /></span>
-                      
+                      <span className="flex items-center">
+                        Order Now
+                        <ArrowRightIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" />
+                      </span>
                     </Button>
-                    <Button
-                      className="p-4 tracking-wide rounded-xl shadow-md shadow-[#7f593e]  hover:scale-105 text-[#2e1609] transition-all hover:font-bold hover:text-[#2e1609] hover:border-spacing-96 font-bold mb-[10px] md:text-[0.9rem] md:p-4 xl:py-[12px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] bg-white"
-                      // variant="outline"
-                    >
-                      View Special Offer
-                      <TagsIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" />
+
+                    <Button className="flex items-center p-3 px-5 tracking-wide rounded-xl shadow-md shadow-[#7f593e] hover:scale-105 text-[#2e1609] transition-all hover:font-bold hover:text-[#2e1609] font-bold bg-white md:text-[0.9rem] md:px-4 xl:py-[8px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px]">
+                      <span className="flex items-center">
+                        View Special Offer
+                        <TagsIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" />
+                      </span>
                     </Button>
                   </div>
+
                   {/* ================================= */}
                 </div>
-                {/* ================================= */} 
+                {/* ================================= */}
                 <div className="xs:relative xs:-top-14 xs:left-[1.5rem] xs:pb-[5rem] sm:relative sm:-top-20 sm:left-[3.5rem] sm:pb-[5rem] md:relative md:top-[-5rem] md:left-[9rem] md:pb-[5rem] 2xl:relative 2xl:top-[-7rem] 2xl:left-[-1.5rem] 2xl:pb-[5rem] xl:relative xl:top-[-7rem] xl:left-[0rem] xl:pb-[5rem] xxl:relative xxl:top-[-6rem] xxl:left-[0rem] lg:relative lg:top-[-6rem] lg:left-[-1rem] custom-xl:relative custom-xl:top-[-6rem] custom-xl:left-[0rem] xxs:relative xxs:top-[-3rem] xxs:left-[1rem] xs-md:relative xs-md:top-[-3rem] xs-md:left-[1.5rem] ">
                   <Image
                     src="/cup1.png"
@@ -153,17 +156,17 @@ const Banner = () => {
                       Brew Your Perfect Cup ☕
                     </p>
                   </div>
-                  <h1 className="md:text-[65px] xs:text-[13vw] xs:w-[100%] xs:leading-[50px] font-bold py-4 lg:pl-[2rem] text-[#5a3e2b] mt-[20px] md:mt-0 text-center sm:leading-[86px] 2xl:text-[7vw] 2xl:mt-[1rem] lg:text-[6vw] lg:mt-[1rem] xl:text-[6vw] xl:ml-[-5rem] xl:mt-3 xxs:text-[14vw] xxs:leading-[46px] xs-sm:leading-[50px] xs-md:text-[15vw] xs-md:leading-[68px]">
+                  <h1 className="md:text-[65px] xs:text-[13vw] xs:w-[100%] xs:leading-[50px] py-4 lg:pl-[2rem] text-[#5a3e2b] mt-[20px] md:mt-0 text-center sm:leading-[86px] 2xl:text-[7vw] 2xl:mt-[1rem] lg:text-[6vw] lg:mt-[1rem] xl:text-[6vw] xl:ml-[-5rem] xl:mt-3 xxs:text-[14vw] xxs:leading-[46px] xs-sm:leading-[50px] xs-md:text-[15vw] xs-md:leading-[68px] font-playfair font-extrabold xl:leading-[76px]">
                     Brew Berry Coffee
                   </h1>
-                  <div className="xs:absolute xs:top-[4.7rem] xs:right-[4rem] xs:mt-5 sm:absolute sm:top-[9rem] sm:right-[1rem] sm:h-[10rem] sm:w-[10rem] md:absolute md:top-[0.5rem] md:right-[-3.5rem] md:mt-5 2xl:absolute 2xl:top-[11rem] 2xl:right-[3rem] 2xl:mt-5 xxl:absolute xxl:top-[17rem] custom-xl:absolute custom-xl:top-[7.5rem] xxl:right-[17rem] lg:absolute lg:top-[5.5rem] lg:right-[-1rem] xl:absolute xl:top-[7.8rem] xl:right-[6rem] xxs:absolute xxs:top-[5.3rem] xxs:right-[1.6rem] xs-sm:absolute xs-sm:top-[5.8rem] xs-sm:right-[2.7rem] xs-md:absolute xs-md:top-[6.8rem] xs-md:rigt-[2.5rem]">
+                  <div className="xs:absolute xs:top-[4.7rem] xs:right-[4rem] xs:mt-5 sm:absolute sm:top-[9rem] sm:right-[1rem] sm:h-[10rem] sm:w-[10rem] md:absolute md:top-[0.5rem] md:right-[-3.5rem] md:mt-5 2xl:absolute 2xl:top-[11rem] 2xl:right-[3rem] 2xl:mt-5 xxl:absolute xxl:top-[17rem] custom-xl:absolute custom-xl:top-[7.5rem] xxl:right-[17rem] lg:absolute lg:top-[5.5rem] lg:right-[-1rem] xl:absolute xxs:absolute xxs:top-[5.3rem] xxs:right-[1.6rem] xs-sm:absolute xs-sm:top-[5.8rem] xs-sm:right-[2.7rem] xs-md:absolute xs-md:top-[6.8rem] xs-md:rigt-[2.5rem] xl:top-[6rem] xl:right-[7rem]">
                     <Image
                       src="/vector.png"
                       alt="Coffee-Tag"
                       title="Coffee-vector"
                       width={60}
                       height={60}
-                      className="md:h-[5rem] md:w-[5rem] 2xl:h-[8rem] 2xl:w-[8rem] xl:w-[5rem] xl:h-[5rem] xxl:h-[10rem] xxl:w-[10rem] lg:h-[5rem] lg:w-[5rem] custom-xl:h-[6rem] custom-xl:w-[6rem] xxs:h-[3.5rem] xxs:w-[3.5rem] xs-md:h-[4.3rem] xs-md:w-[4.3rem]"
+                      className="md:h-[5rem] md:w-[5rem] 2xl:h-[8rem] 2xl:w-[8rem] xl:w-[6rem] xl:h-[6rem] xxl:h-[10rem] xxl:w-[10rem] lg:h-[5rem] lg:w-[5rem] custom-xl:h-[6rem] custom-xl:w-[6rem] xxs:h-[3.5rem] xxs:w-[3.5rem] xs-md:h-[4.3rem] xs-md:w-[4.3rem]"
                     />
                   </div>
                   <p className="py-4 text-[#452b1a] lg:pl-[2rem] ml-[20px] xs:ml-[2.5rem] xs:mr-[2.5rem] md:text-[0.9rem] 2xl:text-[1.5rem] xl:text-[1rem] xl:ml-[1rem] xxl:text-[1.6rem] xxl:ml-[5rem] xxs:text-[12px] xxs:mx-[1rem] xxs:mt-[-10px] xs-md:text-[14px]">
@@ -185,23 +188,24 @@ const Banner = () => {
                     <i className="text-[#5a3e2b]  font-bold"> BrewBerry! ♡</i>
                   </p>
                   {/* ================================= */}
-                  <div className="xs:flex xs:flex-col xs:gap-4 xs:py-1 px-[4rem] xs:px-[6.5rem] sm:flex sm:flex-col sm:gap-4 sm:py-1 sm:px-[11rem] md:flex md:flex-row md:gap-4 md:px-[11rem] md:ml-[2rem] 2xl:flex 2xl:flex-row 2xl:gap-4 2xl:py-1 2xl:px-[6rem] xl:flex xl:flex-row xl:gap-4 xl:py-1 xl:px-[3rem] xxl:flex xxl:flex-row xxl:gap-4 xxl:py-1 xxl:px-[7rem] lg:flex lg:flex-row lg:gap-4 lg:py-1 lg:px-[4rem] xxs:flex xxs:flex-col xxs:gap-3 xxs:px-[-1rem] xs-sm:flex xs-sm:flex-row ">
+                  <div className="xs:flex xs:flex-col xs:gap-4 xs:py-1 px-[4rem] xs:px-[6.5rem] sm:flex sm:flex-col sm:gap-4 sm:py-1 sm:px-[11rem] md:flex md:flex-row md:gap-4 md:px-[11rem] md:ml-[2rem] 2xl:flex 2xl:flex-row 2xl:gap-4 2xl:py-1 2xl:px-[6rem] xl:flex xl:flex-row xl:gap-4 xl:py-1 xl:px-[3rem] xxl:flex xxl:flex-row xxl:gap-4 xxl:py-1 xxl:px-[7rem] lg:flex lg:flex-row lg:gap-4 lg:py-1 lg:px-[4rem] xxs:flex xxs:flex-col xxs:gap-3 xxs:px-[-1rem] xs-sm:flex xs-sm:flex-row">
                     <Button
                       title="Menu-Button"
-                      className="bg-[#2e1609]  text-[#f5e0c3] p-5 tracking-wide rounded-xl shadow-md shadow-[#7f593e] font-bold hover:scale-105 transition-all hover:font-bold hover:bg-[#5a3e2b] hover:text-[#eddfcb] xl:py-[12px] xl:text-[13px]  xxs:text-[11px] xxs:py-[2px] xs-sm:ml-[-2rem] xs-md:ml-[-1rem] md:text-[0.9rem] md:p-4"
+                      className="flex items-center bg-[#2e1609] text-[#f5e0c3] p-3 px-5 rounded-xl shadow-md shadow-[#7f593e] font-bold hover:scale-105 transition-all hover:font-bold md:text-[0.9rem] md:px-4 xl:py-[8px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] xs-sm:ml-[-2rem] xs-md:ml-[-1rem] xl:px-[40px]"
                     >
-                      Order Now
-                      <ArrowRightIcon className="pl-[4px] w-[1.5rem] h-[1.5rem]" />
+                      <span className="flex items-center">
+                        Order Now
+                        <ArrowRightIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" />
+                      </span>
                     </Button>
-
-                    <Button
-                      className="p-4 tracking-wide rounded-xl shadow-md shadow-[#7f593e]  hover:scale-105 text-[#2e1609] transition-all hover:font-bold hover:text-[#2e1609] hover:border-spacing-96 font-bold md:text-[0.9rem] md:p-4 xl:py-[12px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] "
-                      // variant="outline"
-                    >
-                      View Special Offer
-                      <TagsIcon className="pl-[4px] w-[1.5rem] h-[1.5rem]" />
+                    <Button className="flex items-center p-3 px-5 tracking-wide rounded-xl shadow-md shadow-[#7f593e] hover:scale-105 text-[#2e1609] transition-all hover:font-bold hover:text-[#2e1609] font-bold bg-white md:text-[0.9rem] md:px-4 xl:py-[8px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px]">
+                      <span className="flex items-center">
+                        View Special Offer
+                        <TagsIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" />
+                      </span>
                     </Button>
                   </div>
+
                   {/* ================================= */}
                 </div>
                 {/* ================================= */}
@@ -270,21 +274,21 @@ const Banner = () => {
                       Brew Your Perfect Cup ☕
                     </p>
                   </div>
-                  <h1 className="md:text-[65px] xs:text-[13vw] xs:w-[100%] xs:leading-[50px] font-bold py-4 lg:pl-[2rem] text-[#5a3e2b] mt-[20px] md:mt-0 text-center sm:leading-[86px] 2xl:text-[7vw] 2xl:mt-[1rem]  lg:text-[6vw] lg:mt-[1rem] xl:text-[6vw] xl:ml-[-5rem] xl:mt-3 xxs:text-[14vw] xxs:leading-[46px] xs-sm:leading-[50px] xs-md:text-[15vw] xs-md:leading-[68px]">
+                  <h1 className="md:text-[65px] xs:text-[13vw] xs:w-[100%] xs:leading-[50px] py-4 lg:pl-[2rem] text-[#5a3e2b] mt-[20px] md:mt-0 text-center sm:leading-[86px] 2xl:text-[7vw] 2xl:mt-[1rem]  lg:text-[6vw] lg:mt-[1rem] xl:text-[6vw] xl:ml-[-5rem] xl:mt-3 xxs:text-[14vw] xxs:leading-[46px] xs-sm:leading-[50px] xs-md:text-[15vw] xs-md:leading-[68px] font-playfair font-extrabold xl:leading-[76px]">
                     Brew Berry Coffee
                   </h1>
 
-                  <div className="xs:absolute xs:top-[4.7rem] xs:right-[4rem] xs:mt-5 sm:absolute sm:top-[9rem] sm:right-[1rem] sm:h-[10rem] sm:w-[10rem] md:absolute md:top-[0.5rem] md:right-[-3.5rem] md:mt-5 2xl:absolute 2xl:top-[11rem] 2xl:right-[3rem] 2xl:mt-5 xxl:absolute xxl:top-[17rem] xxl:right-[17rem] custom-xl:absolute custom-xl:top-[7.5rem] custom-xl:right-[8rem] lg:absolute lg:top-[5.5rem] lg:right-[-1rem] xl:absolute xl:top-[7.8rem] xl:right-[6rem] xxs:absolute xxs:top-[5.3rem] xxs:right-[1.6rem]  xs-sm:absolute xs-sm:top-[5.8rem] xs-sm:right-[2.7rem] xs-md:absolute xs-md:top-[6.8rem] xs-md:rigt-[2.5rem]">
+                  <div className="xs:absolute xs:top-[4.7rem] xs:right-[4rem] xs:mt-5 sm:absolute sm:top-[9rem] sm:right-[1rem] sm:h-[10rem] sm:w-[10rem] md:absolute md:top-[0.5rem] md:right-[-3.5rem] md:mt-5 2xl:absolute 2xl:top-[11rem] 2xl:right-[3rem] 2xl:mt-5 xxl:absolute xxl:top-[17rem] xxl:right-[17rem] custom-xl:absolute custom-xl:top-[7.5rem] custom-xl:right-[8rem] lg:absolute lg:top-[5.5rem] lg:right-[-1rem] xl:absolute xl:top-[6rem] xl:right-[7rem]      xxs:absolute xxs:top-[5.3rem] xxs:right-[1.6rem]  xs-sm:absolute xs-sm:top-[5.8rem] xs-sm:right-[2.7rem] xs-md:absolute xs-md:top-[6.8rem] xs-md:rigt-[2.5rem]">
                     <Image
                       src="/vector.png"
                       alt="Coffee-Tag"
                       title="Coffee-vector"
                       width={60}
                       height={60}
-                      className="md:h-[5rem] md:w-[5rem] 2xl:h-[8rem] 2xl:w-[8rem] xl:w-[5rem] xl:h-[5rem] xxl:h-[10rem] xxl:w-[10rem] lg:h-[5rem] lg:w-[5rem] custom-xl:h-[6rem] custom-xl:w-[6rem] xxs:h-[3.5rem] xxs:w-[3.5rem] xs-md:h-[4.3rem] xs-md:w-[4.3rem]"
+                      className="md:h-[5rem] md:w-[5rem] 2xl:h-[8rem] 2xl:w-[8rem] xl:w-[6rem] xl:h-[6rem] xxl:h-[10rem] xxl:w-[10rem] lg:h-[5rem] lg:w-[5rem] custom-xl:h-[6rem] custom-xl:w-[6rem] xxs:h-[3.5rem] xxs:w-[3.5rem] xs-md:h-[4.3rem] xs-md:w-[4.3rem]"
                     />
                   </div>
-                  <p className="py-4 text-[#452b1a] lg:pl-[2rem] ml-[20px] xs:ml-[2.5rem] xs:mr-[2.5rem] md:text-[0.9rem] 2xl:text-[1.5rem] xl:text-[1rem] xl:ml-[1rem] xxl:text-[1.6rem] xxl:ml-[5rem] xxs:text-[12px] xxs:mx-[1rem] xxs:mt-[-10px] xs-md:text-[14px]">
+                  <p className="py-4 text-[#452b1a] lg:pl-[2rem] ml-[20px] xs:ml-[2.5rem] xs:mr-[2.5rem] md:text-[0.9rem] 2xl:text-[1.5rem] xl:text-[1rem] xl:ml-[1rem] xxl:text-[1.6rem] xxl:ml-[5rem] xxs:text-[12px] xxs:mx-[1rem] xxs:mt-[-10px] xs-md:text-[14px] font-montserrat">
                     <b>
                       <i className="text-[#5a3e2b]  ">
                         "Where every Sip Tells a Story"
@@ -303,29 +307,30 @@ const Banner = () => {
                     <i className="text-[#5a3e2b]  font-bold"> BrewBerry! ♡</i>
                   </p>
                   {/* ================================= */}
-                  <div className="xs:flex xs:flex-col xs:gap-4 xs:py-1 px-[4rem] xs:px-[6.5rem] sm:flex sm:flex-col sm:gap-4 sm:py-1 sm:px-[11rem] 2xl:flex 2xl:flex-row 2xl:gap-4 2xl:py-1 2xl:px-[6rem] xl:flex xl:flex-row xl:gap-4 xl:py-1 xl:px-[3rem] xxl:flex xxl:flex-row xxl:gap-4 xxl:py-1 xxl:px-[7rem] lg:flex lg:flex-row lg:gap-4 lg:py-1 lg:px-[4rem] xxs:flex xxs:flex-col xxs:gap-3 xxs:px-[-1rem] xs-sm:flex xs-sm:flex-row md:flex md:flex-row md:gap-4 md:px-[11rem] md:ml-[2rem]" >
+                  <div className="xs:flex xs:flex-col xs:gap-4 xs:py-1 px-[4rem] xs:px-[6.5rem] sm:flex sm:flex-col sm:gap-4 sm:py-1 sm:px-[11rem] md:flex md:flex-row md:gap-4 md:px-[11rem] md:ml-[2rem] 2xl:flex 2xl:flex-row 2xl:gap-4 2xl:py-1 2xl:px-[6rem] xl:flex xl:flex-row xl:gap-4 xl:py-1 xl:px-[3rem] xxl:flex xxl:flex-row xxl:gap-4 xxl:py-1 xxl:px-[7rem] lg:flex lg:flex-row lg:gap-4 lg:py-1 lg:px-[4rem] xxs:flex xxs:flex-col xxs:gap-3 xxs:px-[-1rem] xs-sm:flex xs-sm:flex-row">
                     <Button
                       title="Menu-Button"
-                      className="bg-[#2e1609]  text-[#f5e0c3] p-5 tracking-wide rounded-xl shadow-md shadow-[#7f593e] font-bold hover:scale-105 transition-all hover:font-bold hover:bg-[#5a3e2b] hover:text-[#eddfcb] md:text-[0.9rem] md:p-4 xl:py-[12px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] xs-sm:ml-[-2rem] xs-md:ml-[-1rem]"
+                      className="flex items-center bg-[#2e1609] text-[#f5e0c3] p-3 px-5 rounded-xl shadow-md shadow-[#7f593e] font-bold hover:scale-105 transition-all hover:font-bold md:text-[0.9rem] md:px-4 xl:py-[8px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] xs-sm:ml-[-2rem] xs-md:ml-[-1rem] xl:px-[40px]"
                     >
-                      Order Now
-                      <ArrowRightIcon className="pl-[4px] w-[1.5rem] h-[1.5rem]" />
+                      <span className="flex items-center">
+                        Order Now
+                        <ArrowRightIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" />
+                      </span>
                     </Button>
-
-                    <Button
-                      className="p-4 tracking-wide rounded-xl shadow-md shadow-[#7f593e]  hover:scale-105 text-[#2e1609] transition-all hover:font-bold hover:text-[#2e1609] hover:border-spacing-96 font-bold md:text-[0.9rem] md:p-4 xl:py-[12px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px] "
-                      // variant="outline"
-                    >
-                      View Special Offer
-                      <TagsIcon className="pl-[4px] w-[1.5rem] h-[1.5rem]" />
+                    <Button className="flex items-center p-3 px-5 tracking-wide rounded-xl shadow-md shadow-[#7f593e] hover:scale-105 text-[#2e1609] transition-all hover:font-bold hover:text-[#2e1609] font-bold bg-white md:text-[0.9rem] md:px-4 xl:py-[8px] xl:text-[13px] xxs:text-[11px] xxs:py-[2px]">
+                      <span className="flex items-center">
+                        View Special Offer
+                        <TagsIcon className="pl-[4px] w-[1.5rem] h-[1.5rem] xxs:h-[1.2rem] xxs:w-[1.2rem]" />
+                      </span>
                     </Button>
                   </div>
+
                   {/* ================================= */}
                 </div>
                 {/* ================================= */}
-                <div className="xs:relative xs:top-[3rem] xs:left-[4rem] xs:pb-[5rem] sm:relative sm:top-[2rem] sm:left-[7rem] sm:pb-[5rem] md:relative md:top-[3rem] md:left-[9rem] md:pb-[5rem] 2xl:relative 2xl:top-[2rem] 2xl:left-[3rem] 2xl:pb-[5rem]  xl:relative xl:top-[3rem] xl:left-[6.5rem] xl:pb-[5rem] xxl:relative xxl:top-[4rem] xxl:left-[7rem] lg:relative lg:top-[3rem] lg:left-[-1rem] custom-xl:relative custom-xl:top-[2rem] custom-xl:left-[3rem] xxs:relative xxs:top-[2rem] xxs:left-[1rem] xs-sm:relative xs-sm:left-[3rem] xs-md:relative xs-md:top-[3rem] xs-md:left-[3rem]">
+                <div className="xs:relative xs:top-[3rem] xs:left-[4rem] xs:pb-[5rem] sm:relative sm:top-[2rem] sm:left-[7rem] sm:pb-[5rem] md:relative md:top-[3rem] md:left-[9rem] md:pb-[5rem] 2xl:relative 2xl:top-[2rem] 2xl:left-[3rem] 2xl:pb-[5rem] xl:relative xl:top-[2rem] xl:left-[5rem] xl:pb-[5rem] xxl:relative xxl:top-[4rem] xxl:left-[7rem] lg:relative lg:top-[3rem] lg:left-[-1rem] custom-xl:relative custom-xl:top-[2rem] custom-xl:left-[3rem] xxs:relative xxs:top-[2rem] xxs:left-[1rem] xs-sm:relative xs-sm:left-[3rem] xs-md:relative xs-md:top-[3rem] xs-md:left-[3rem]">
                   <Image
-                    className="xs:h-80 xs:w-80 sm:h-[35vh] sm:w-[55vw] md:h-[70vh] md:w-[60vw] 2xl:h-[55vh] 2xl:w-[40vw] xl:h-[60vh] xl:w-[35vw] xxl:h-[70vh] xxl:w-[40vw] lg:h-[40vh] lg:w-[60vw] custom-xl:h-[50vh] custom-xl:w-[40vw] xxs:h-[50vh] xxs:w-[80vw]  xs-sm:h-[50vh] xs-sm:w-[70vw] xs-md:h-[55vh] xs-md:w-[75vw] "
+                    className="xs:h-80 xs:w-80 sm:h-[35vh] sm:w-[55vw] md:h-[70vh] md:w-[60vw] 2xl:h-[55vh] 2xl:w-[40vw] xl:h-[70vh] xl:w-[40vw] xxl:h-[70vh] xxl:w-[40vw] lg:h-[40vh] lg:w-[60vw] custom-xl:h-[50vh] custom-xl:w-[40vw] xxs:h-[50vh] xxs:w-[80vw] xs-sm:h-[50vh] xs-sm:w-[70vw] xs-md:h-[55vh] xs-md:w-[75vw] "
                     src="/coffee-cup4.jpg"
                     alt="Coffee-cup"
                     width={400}

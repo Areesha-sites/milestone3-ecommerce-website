@@ -6,92 +6,58 @@ import {
   DialogPanel,
   Disclosure,
   DisclosureButton,
-  DisclosurePanel,
   PopoverGroup,
 } from "@headlessui/react";
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-
-/* ========================callsToAction================================= */
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
-{
-  /* ========================Products================================= */
-}
+import { HeaderNavLinksType } from "../../../Types/types";
 
-const products = [
-  {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
-    href: "#",
-    icon: ChartPieIcon,
-  },
-  {
-    name: "Engagement",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: "Security",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools",
-    href: "#",
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
-    href: "#",
-    icon: ArrowPathIcon,
-  },
-];
-{
-  /* ========================callsToAction================================= */
-}
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
-/* ========================Header start================================= */
 const Header = () => {
+  const headerLinks: HeaderNavLinksType[] = [
+    {
+      href: "/",
+      name: "Home",
+    },
+    {
+      href: "/about",
+      name: "About",
+    },
+    {
+      href: "/product",
+      name: "Menu",
+    },
+    {
+      href: "/coffeeSell",
+      name: "Special Offer",
+    },
+    {
+      href: "/testimonial",
+      name: "Testimonials",
+    },
+    {
+      href: "/contact",
+      name: "Contact",
+    },
+  ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-[#f5e5ce] w-full">
       <nav
         aria-label="Global"
-        className=" flex items-center justify-between lg:px-7"
+        className=" flex items-center justify-between lg:px-7 py-[-9px]"
       >
-        {/* ========================================================= */}
+        {/* ========================Logo Section================================= */}
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <Image
-              alt="BrewBerry-Shop"
-              src="/logo3.jpg"
-              className=""
-              width={90}
-              height={90}
-            />
-          </a>
+          <Image
+            alt="coffee-logo"
+            src="/mainlogo.jpg"
+            className=""
+            width={120}
+            height={120}
+          />
         </div>
         {/* ========================================================= */}
         <div className="flex lg:hidden">
@@ -100,68 +66,46 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(true)}
             className="-mr-[-1rem] inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
-            <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        {/* ========================================================= */}
+        {/* ========================Header Links================================= */}
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link
-            href="/"
-            className="text-md font-bold leading-6 text-[#5a3e2b] hover:border-b-4 hover:border-b-[#c0a278] transition duration-300 "
-          >
-            Home
-          </Link>
-
+          {headerLinks.map((link) => (
+            <ul>
+              <li>
+                <Link
+                  href={link.href}
+                  className="text-md font-bold leading-6 text-[#5a3e2b] hover:border-b-4 hover:border-b-[#c0a278] transition duration-300 "
+                >
+                  {link.name}
+                </Link>
+              </li>
+            </ul>
+          ))}
+        </PopoverGroup>
+        {/* =================== Header Buttons====================================== */}
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-5">
           <Link
             href="/product"
-            className="text-md font-bold leading-6 text-[#5a3e2b] hover:border-b-4 hover:border-b-[#c0a278] transition duration-300 "
+            className="text-sm font-semibold leading-6 text-gray-900"
           >
-            Menu
-          </Link>
-
-          <Link
-            href="/orderCoffee"
-            className="text-md font-bold leading-6 text-[#5a3e2b] hover:border-b-4 hover:border-b-[#c0a278] transition duration-300"
-          >
-            Order
-          </Link>
-
-          <Link
-            href="/coffeeSell"
-            className="text-md font-bold leading-6 text-[#5a3e2b] hover:border-b-4 hover:border-b-[#c0a278] transition duration-300"
-          >
-            Sale
-          </Link>
-          <Link
-            href="/instantCoffee"
-            className="text-md font-bold leading-6 text-[#5a3e2b] hover:border-b-4 hover:border-b-[#c0a278] transition duration-300"
-          >
-            DIY Coffee
-          </Link>
-          <Link
-            href="/testimonial"
-            className="text-md font-bold leading-6 text-[#5a3e2b] hover:border-b-4 hover:border-b-[#c0a278] transition duration-300"
-          >
-            Testimonial
-          </Link>
-        </PopoverGroup>
-        {/* ========================================================= */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-5">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             <i
               className="bx bxs-cart color:#5a3e2b bx-flip-horizontal bx-tada hover:cursor-pointer bg-gray-50 hover:bg-gray-100 p-2 rounded-full shadow-md shadow-[#c0a278] hover:shadow-lg  hover:scale-105 transition-all"
               title="Add to cart"
             ></i>
-          </a>
-          <Button className="bg-[#5a3e2b] text-[#f5e0c3] p-3 rounded-xl shadow-md shadow-[#c0a278] hover:scale-105 transition-all hover:font-medium">
-            Order Online
-          </Button>
+          </Link>
+          <button className="bg-[#5a3e2b] hover:bg-[#412818] text-white font-bold py-2 px-4 rounded-[10px]">
+            Sign in
+          </button>
+          <button className="bg-[#5a3e2b] hover:bg-[#412818] text-white font-bold py-2 px-4 rounded-[10px]">
+            Log in
+          </button>
         </div>
         {/* ========================================================= */}
       </nav>
 
-      {/* ========================================================= */}
+      {/* ========================= Mobile Header================================ */}
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
@@ -198,7 +142,7 @@ const Header = () => {
                       className="h-5 w-5 flex-none group-data-[open]:rotate-180"
                     />
                   </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
+                  {/* <DisclosurePanel className="mt-2 space-y-2">
                     {[...products, ...callsToAction].map((item) => (
                       <DisclosureButton
                         key={item.name}
@@ -209,7 +153,7 @@ const Header = () => {
                         {item.name}
                       </DisclosureButton>
                     ))}
-                  </DisclosurePanel>
+                  </DisclosurePanel> */}
                 </Disclosure>
                 <a
                   href="#"

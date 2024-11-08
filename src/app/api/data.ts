@@ -5,7 +5,7 @@ import { PastriesCategoryTypes } from "../../../Types/types";
 import { BreakFastsCategoryTypes } from "../../../Types/types";
 import { SnacksCategoryTypes } from "../../../Types/types";
 import { DessertsCategoryTypes } from "../../../Types/types";
-// import { productDetailsTypes } from "../../../Types/types";
+import { productDetailsTypes } from "../../../Types/types";
 // =========================all category section===========================
 export const products: ProductsTypes[] = [
   {
@@ -156,7 +156,7 @@ export const hotBeverages: HotBeveragesCategoryTypes[] = [
     name: "Cappuccino",
     price: 150,
     description:
-      "A classic Italian drink made with espresso and milk..",
+      "A classic Italian drink made with espresso and milk.",
     image: "/hotbeverage1.jpg",
     category: 1,
   },
@@ -513,24 +513,24 @@ export const getDessertsById = (id: number): DessertsCategoryTypes | undefined =
 
 // ==================products details data==========
 
-// export const productDetails: productDetailsTypes[] = [
-//   {
-//     id:1,
-//     name: 'Product 1',
-//     description: 'This is the first product.',
-//     ingredients: ['Ingredient 1', 'Ingredient 2'],
-//     flavors: ['Flavor A', 'Flavor B'],
-//     image: 'path/to/image1.jpg', 
-//   },
-//   {
-//     id:2,
-//     name: 'Product 1',
-//     description: 'This is the first product.',
-//     ingredients: ['Ingredient 1', 'Ingredient 2'],
-//     flavors: ['Flavor A', 'Flavor B'],
-//     image: 'path/to/image1.jpg', 
-//   }
-// ]
-// export const getProductsDetailById = (id: number): productDetailsTypes | undefined => {
-//   return productDetails.find((pro) => pro.id === id);
-// };
+export const productDetails: productDetailsTypes[] = [
+  {
+    id:1,
+    name: 'Product 1',
+    description: 'This is the first product.',
+    ingredients: ['Ingredient 1', 'Ingredient 2'],
+    flavors: ['Flavor A', 'Flavor B'],
+    image: 'path/to/image1.jpg', 
+  },
+  {
+    id:2,
+    name: 'Product 1',
+    description: 'This is the first product.',
+    ingredients: ['Ingredient 1', 'Ingredient 2'],
+    flavors: ['Flavor A', 'Flavor B'],
+    image: 'path/to/image1.jpg', 
+  }
+]
+export const getProductsDetailById = (id: number): productDetailsTypes | undefined => {
+  return productDetails.find((pro) => pro.id === id);
+};

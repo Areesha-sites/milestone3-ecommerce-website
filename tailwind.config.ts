@@ -23,7 +23,14 @@ const config: Config = {
         "2xl": "1536px", // Very large screens
         xxl: "2560px", // 2560px screens (Ultra-wide monitors, etc.)
       },
+      fontFamily: {
+        playfair: ["playfair", "serif", "sans-serif"],
+        lato: ["lato", "sans-serif"],
+      },
+
       colors: {
+        headingColour: "var(--headingColour)",
+        bodyTextColour: "var(--bodyTextColour)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

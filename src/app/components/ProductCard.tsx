@@ -13,7 +13,7 @@ const ProductCard = ({ product }: ProductsCardProps) => {
     <>
       <div className="bg-gradient-to-tl to-[#f4d1b7] from-[#7e5233] border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 xl:h-[60vh] xxs:h-[70vh] hover:cursor-pointer hover:scale-105 hover:transition-all duration-300 hover:ease-linear shadow-md shadow-[#674632] overflow-hidden">
         <div className="">
-          <Link href={`/products/${product.id}`}></Link>
+          <Link href={`/product/${product.id}`}></Link>
         </div>
         <Image
           src={product.image}
@@ -52,7 +52,7 @@ const ProductCard = ({ product }: ProductsCardProps) => {
               Add to cart <FaCartArrowDown className="text-lg" />
             </span>
           </Button>
-          <Link href={`/product/productDetails/${product.id}`} passHref>
+          <Link href={`/product/${product.id}`} passHref>
             <Button className=" py-1 px-7 rounded-[5px] font-semibold text-white hover:text-[#2e1609] transition-all duration-300 ease-linear xl:mt-0  underline xxs:mt-[-1rem]">
               <span className="flex items-center gap-2 xxs:text-[12px] xl:text-[15px]">
                 {" "}

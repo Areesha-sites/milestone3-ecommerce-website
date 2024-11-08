@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface CountdownTimerProps {
   targetDate: string;
 }
@@ -20,10 +22,10 @@ export interface ProductsTypes {
   description: string;
   image: string;
   category: number;
-  detailDescription: string;
+  detailDescription?: string;
 }
 export interface ProductsCardProps {
-  product: ProductsTypes
+  product: ProductsTypes;
 }
 export interface CategoriesTypes {
   name: string;
@@ -39,11 +41,10 @@ export interface HotBeveragesCategoryTypes {
   category: number;
 }
 export interface HotBeverageCardProps {
-  hotBeverage: HotBeveragesCategoryTypes
+  hotBeverage: HotBeveragesCategoryTypes;
 }
 
-
-export interface ColdBeveragescategoryTypes{
+export interface ColdBeveragescategoryTypes {
   id: number;
   name: string;
   price: number;
@@ -52,11 +53,10 @@ export interface ColdBeveragescategoryTypes{
   category: number;
 }
 export interface ColdBeverageCardProps {
-  coldBeverage: ColdBeveragescategoryTypes
+  coldBeverage: ColdBeveragescategoryTypes;
 }
 
-
-export interface PastriesCategoryTypes{
+export interface PastriesCategoryTypes {
   id: number;
   name: string;
   price: number;
@@ -65,12 +65,9 @@ export interface PastriesCategoryTypes{
   category: number;
 }
 export interface PastriesCardProps {
-  pastry: PastriesCategoryTypes
+  pastry: PastriesCategoryTypes;
 }
-
-
-
-export interface BreakFastsCategoryTypes{
+export interface BreakFastsCategoryTypes {
   id: number;
   name: string;
   price: number;
@@ -79,12 +76,9 @@ export interface BreakFastsCategoryTypes{
   category: number;
 }
 export interface BreakFastCardProps {
-  breakfast: BreakFastsCategoryTypes
+  breakfast: BreakFastsCategoryTypes;
 }
-
-
-
-export interface SnacksCategoryTypes{
+export interface SnacksCategoryTypes {
   id: number;
   name: string;
   price: number;
@@ -93,10 +87,10 @@ export interface SnacksCategoryTypes{
   category: number;
 }
 export interface SnacksCardProps {
-  snack: SnacksCategoryTypes
+  snack: SnacksCategoryTypes;
 }
 
-export interface DessertsCategoryTypes{
+export interface DessertsCategoryTypes {
   id: number;
   name: string;
   price: number;
@@ -105,18 +99,64 @@ export interface DessertsCategoryTypes{
   category: number;
 }
 export interface DessertsCardProps {
-  dessert: DessertsCategoryTypes
+  dessert: DessertsCategoryTypes;
 }
 
 // // product details types
-// export interface productDetailsTypes {
-//   id: number;
-//   name: string;
-//   description: string;
-//   ingredients: string[];
-//   image: string;
-//   flavors: string[]
-// }
-// export interface ingredientsTypes{
-//   ingredients: productDetailsTypes;
-// } 
+export interface productDetailsTypes {
+  id: number;
+  name: string;
+  description: string;
+  ingredients: string[];
+  image: string;
+  flavors: string[];
+}
+export interface ingredientsTypes {
+  ingredients: productDetailsTypes;
+}
+
+export interface AboutTeamMembersTypes {
+  name: string;
+  role: string;
+  image: string;
+  description: string;
+}
+export interface AboutTeamMembercards {
+  image: string;
+  name: string;
+  role: string;
+  description: string;
+}
+
+
+
+
+
+
+// ========================Footer Types======================
+export interface FooterNavLinkTypes {
+  link: string;
+  name: string;
+}
+export interface FooterSocialIconsTypes {
+  url: string;
+  label: string;
+  icon: ReactNode;
+}
+export interface CompanyFooterLinkTypes {
+  link: string;
+  name: string;
+}
+export interface HelpfullFooterLinkTypes {
+  link: string;
+  name: string;
+}
+export interface LegalFooterLinkTypes {
+  link: string,
+  name: string,
+}
+// ========================Header Types======================
+export interface HeaderNavLinksType {
+  href: string,
+  name: string
+}

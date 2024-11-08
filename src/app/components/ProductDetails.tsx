@@ -2,6 +2,8 @@
 // src/product/ProductDetails.tsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { hotBeverages } from '../api/data';
+import { ChartColumnStacked } from 'lucide-react';
 
 interface Product {
   id: string;
@@ -33,11 +35,16 @@ const products: Product[] = [
 
 const ProductDetails: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
-  
+  const {hotBeverageId} = useParams<{hotBeverageId: string}>();
+
   const product = products.find(p => p.id === productId);
+  const hotBeverage = hotBeverages.find(h => h.id === Number(hotBeverageId))
 
   if (!product) {
     return <div>Product not found</div>;
+  }
+  if(!hotBeverage){
+    return <div className="">Product Not found</div>
   }
 
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 const InstantCoffee = () => {
   return (
     <>
@@ -37,11 +37,11 @@ const InstantCoffee = () => {
             🤎
           </p>
 
-          <div className="">
+          {/* <div className="">
             <Button className="mt-2  bg-[#5a3e2b] text-[#f5e0c3] px-12 mx-5 tracking-wide rounded-2xl shadow-xl shadow-[#c0a278] font-normal hover:scale-105 transition-all hover:font-medium hover:bg-[#4b3123]">
               Place Order
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -6,7 +6,8 @@ import Link from "next/link";
 const OrderCoffee = () => {
   return (
     <>
-      <div className="bg-[#f5e0c3] md:py-13">
+      <h1>Order Coffee</h1>
+      {/* <div className="bg-[#f5e0c3] md:py-13">
         <div className="container">
           <div className="grid grid-cols-2  items-center pb-24">
             <div className="ml-4">
@@ -31,8 +32,8 @@ const OrderCoffee = () => {
                 pastries, there's something for everyone to enjoy. Browse our
                 menu to discover your new favourite indulgence perfect for any
                 time of the day."
-              </p>
-{/* 
+              </p> */}
+      {/* 
               <div className="">
                 <Button className="mt-2  bg-[#5a3e2b] text-[#f5e0c3] px-5 mx-5 tracking-wide rounded-2xl shadow-xl shadow-[#c0a278] font-normal hover:scale-105 transition-all hover:font-medium hover:bg-[#4b3123]">
                   Order Now
@@ -46,10 +47,10 @@ const OrderCoffee = () => {
                   </Button>
                 </Link>
               </div> */}
-            </div>
+      {/* </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
